@@ -36,7 +36,13 @@ GROUP BY customer_id
 ORDER BY customer_id;
 ```
 
-**Result Set**
-![yo](https://github.com/user-attachments/assets/227aafaa-b159-4b6a-8270-8ce774300e40)
+**Result set:**
+
+| customer_id | total_sales |
+|-------------|-------------|
+| A           | 76          |
+| B           | 74          |
+| C           | 36          |
+
 
 
