@@ -22,7 +22,6 @@ We’ll walk through each question with the associated query and result set.
 ---
 
 ## ✅ Solutions
-![Result screenshot](https://github.com/user-attachments/assets/44a1a555-86b5-4842-9c2f-24d127156918)
 
 ### 1. What is the total amount each customer spent at the restaurant?
 
@@ -35,6 +34,7 @@ INNER JOIN dannys_diner.sales
 USING (product_id)
 GROUP BY customer_id
 ORDER BY customer_id;
+```
 
 
 ![Result screenshot](https://github.com/user-attachments/assets/44a1a555-86b5-4842-9c2f-24d127156918)
