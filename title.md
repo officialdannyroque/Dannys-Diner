@@ -37,6 +37,6 @@ ORDER BY customer_id;
 ```
 
 **Result Set**
-(https://github.com/user-attachments/assets/227aafaa-b159-4b6a-8270-8ce774300e40)
+![yo](https://github.com/user-attachments/assets/227aafaa-b159-4b6a-8270-8ce774300e40)
 
 
