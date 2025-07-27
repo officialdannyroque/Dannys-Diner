@@ -20,6 +20,7 @@ We’ll walk through each question with the associated query and result set.
 10. In the first week after a customer joins, they earn 2x points on all items. How many points do customers A and B have at the end of January?
 
 ---
+![Uploading Screenshot 2025-07-27 at 11.05.24 AM.png…]()
 
 ## ✅ Solutions
 
