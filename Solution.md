@@ -75,8 +75,7 @@ WITH ranked_orders AS (SELECT customer_id, product_id, order_date,
 
 SELECT 		r.customer_id, m.product_name
 FROM   		ranked_orders r
-INNER JOIN  	menu m
-ON 		r.product_id = m.product_id
+INNER JOIN  	menu m ON r.product_id = m.product_id
 WHERE		r.earliest_order_rank = 1
 ORDER BY 	customer_id;
 ```
@@ -89,6 +88,28 @@ ORDER BY 	customer_id;
 | A           | sushi        |
 | B           | curry        |
 | C           | ramen        |
+
+---
+
+### 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
+
+```sql
+WITH product_count AS (SELECT product_id, COUNT(*) AS num_purchased
+		       FROM sales
+		       GROUP BY product_id)
+
+SELECT 	   m.product_name, num_purchased
+FROM 	   product_count p
+INNER JOIN menu m ON p.product_id = m.product_id
+ORDER BY   num_purchased DESC
+LIMIT 1;
+```
+
+**Result set:**
+
+| product_name | num_purchased |
+|--------------|----------------|
+| ramen        | 8              |
 
 
 
