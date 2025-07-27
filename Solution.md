@@ -51,14 +51,14 @@ ORDER BY customer_id;
 ### 2. How many days has each customer visited the restaurant?
 
 ```sql
-SELECT customer_id, COUNT(DISTINCT order_date)
+SELECT customer_id, COUNT(DISTINCT order_date) AS num_visits
 FROM sales
 GROUP BY customer_id;
 ```
 
 **Result set:**
 
-| customer_id | total_sales |
+| customer_id | num_visits  |
 |-------------|-------------|
 | A           | 4           |
 | B           | 6           |
