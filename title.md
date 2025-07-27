@@ -35,4 +35,13 @@ USING (product_id)
 GROUP BY customer_id
 ORDER BY customer_id;
 
+**Result:**
+
+| customer_id | total_sales |
+|-------------|-------------|
+| A           | 76          |
+| B           | 74          |
+| C           | 36          |
+
+
 
