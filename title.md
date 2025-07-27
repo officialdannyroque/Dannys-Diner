@@ -36,9 +36,7 @@ GROUP BY customer_id
 ORDER BY customer_id;
 ```
 
-
-![Result screenshot](https://github.com/user-attachments/assets/44a1a555-86b5-4842-9c2f-24d127156918)
-
-![wassup ma boi](https://github.com/user-attachments/assets/b9a96c14-42b0-433d-bdbc-124458025f2f)
+**Result Set**
+(https://github.com/user-attachments/assets/227aafaa-b159-4b6a-8270-8ce774300e40)
 
 
