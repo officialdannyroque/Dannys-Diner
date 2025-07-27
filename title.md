@@ -44,5 +44,28 @@ ORDER BY customer_id;
 | B           | 74          |
 | C           | 36          |
 
+---
+
+### 2. How many days has each customer visited the restaurant?
+
+```sql
+SELECT 
+    customer_id,
+    SUM(price) AS total_sales
+FROM dannys_diner.menu
+INNER JOIN dannys_diner.sales
+USING (product_id)
+GROUP BY customer_id
+ORDER BY customer_id;
+```
+
+**Result set:**
+
+| customer_id | total_sales |
+|-------------|-------------|
+| A           | 4           |
+| B           | 6           |
+| C           | 2           |
+
 
 
