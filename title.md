@@ -35,13 +35,7 @@ USING (product_id)
 GROUP BY customer_id
 ORDER BY customer_id;
 
-**Result:**
 
-| customer_id | total_sales |
-|-------------|-------------|
-| A           | 76          |
-| B           | 74          |
-| C           | 36          |
-
+<img width="295" height="186" alt="Screenshot 2025-07-27 at 10 49 37 AM" src="https://github.com/user-attachments/assets/f017d63f-a510-4dd2-bcfa-28dcc4ee8d2e" />
 
 
