@@ -67,5 +67,30 @@ ORDER BY customer_id;
 | B           | 6           |
 | C           | 2           |
 
+---
+
+### 3. What was the first item from the menu purchased by each customer?
+
+```sql
+SELECT 
+    customer_id,
+    SUM(price) AS total_sales
+FROM dannys_diner.menu
+INNER JOIN dannys_diner.sales
+USING (product_id)
+GROUP BY customer_id
+ORDER BY customer_id;
+```
+
+**Result set:**
+
+| customer_id | product_name |
+|-------------|--------------|
+| A           | curry        |
+| A           | sushi        |
+| B           | curry        |
+| C           | ramen        |
+
+
 
 
