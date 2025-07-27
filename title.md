@@ -34,3 +34,11 @@ INNER JOIN dannys_diner.sales
 USING (product_id)
 GROUP BY customer_id
 ORDER BY customer_id;
+
+
+| customer\_id | visit\_count |
+| ------------ | ------------ |
+| A            | 4            |
+| B            | 6            |
+| C            | 2            |
+
