@@ -69,14 +69,16 @@ GROUP BY customer_id;
 ### 3. What was the first item from the menu purchased by each customer?
 
 ```sql
-SELECT 
-    customer_id,
-    SUM(price) AS total_sales
-FROM dannys_diner.menu
-INNER JOIN dannys_diner.sales
-USING (product_id)
-GROUP BY customer_id
-ORDER BY customer_id;
+WITH ranked_orders AS (SELECT customer_id, product_id, order_date,
+			      RANK() OVER(PARTITION BY customer_id ORDER BY order_date) AS earliest_order_rank
+			      FROM sales)
+
+SELECT 		r.customer_id, m.product_name
+FROM   		ranked_orders r
+INNER JOIN  	menu m
+ON 		r.product_id = m.product_id
+WHERE		r.earliest_order_rank = 1
+ORDER BY 	customer_id;
 ```
 
 **Result set:**
