@@ -36,5 +36,5 @@ GROUP BY customer_id
 ORDER BY customer_id;
 
 
-![<img width="350" height="42" alt="Screenshot 2025-07-27 at 11 06 38 AM" src="https://github.com/user-attachments/assets/44a1a555-86b5-4842-9c2f-24d127156918" />]
+![wallumps hi] (<img width="350" height="42" alt="Screenshot 2025-07-27 at 11 06 38 AM" src="https://github.com/user-attachments/assets/44a1a555-86b5-4842-9c2f-24d127156918" />)
 
